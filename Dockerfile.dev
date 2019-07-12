@@ -1,0 +1,11 @@
+FROM node:alpine
+
+#RUN npm config set proxy http://172.16.8.250:3128 
+
+WORKDIR '/app'
+COPY package.json .
+RUN npm install
+
+COPY . .
+
+CMD ["npm", "run", "start"]
