@@ -3,8 +3,8 @@ sudo: required
 services:
   - docker
 
-  before_install:
-    - docker build -t dotoridas/docker-react -f Dockerfile.dev .
+before_install:
+  - docker build -t dotoridas/docker-react -f Dockerfile.dev .
 
-  script:
-    - docker run dotoridas/docker-react npm run test -- --coverage
+script:
+  - docker run dotoridas/docker-react npm run test -- --coverage
