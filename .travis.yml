@@ -1,0 +1,9 @@
+sudo: required
+services:
+  - docker
+
+  before_install:
+    - docker build -t dotoridas/docker-react -f Dockerfile.dev .
+
+  scripts:
+    - docker run dotoridas/docker-react npm run test -- --coverage

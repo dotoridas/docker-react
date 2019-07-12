@@ -1,0 +1,15 @@
+7. Continuous Integration and Deployment with AWS
+	1. Services Overview
+	2. Github Setup -_ travis-ci.org
+	3. Travis CI Setup - will use to test and deploy
+	4. Travis YML File Configuration -> create a file .travis.yml
+	5. A Touch More Travis Setup-> docker run dotoridas/docker-react npm run test -- --coverage
+	6. Automatic Build Creation
+	7. AWS Elastic Beanstalk
+	8. More on Elastic Beanstalk
+	9. Travis Config for Deployment
+	10. Automated Deployments
+	11. Exposing Ports Through the Dockerfile
+	13. Workflow With Github
+	14. Redeploy on Pull Request Merge
+	15. Deployment Wrapup
